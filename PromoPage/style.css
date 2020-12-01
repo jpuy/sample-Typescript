@@ -1,0 +1,227 @@
+#container {
+  width: 100%;
+  /* height: calc(100vh - 105px); */
+  height: calc(100vh - 142px);
+  display: block;
+  overflow: hidden auto;
+  margin: 10px 0;
+  padding: 10px 0 0;
+  /* border: 1px solid black; */
+}
+
+#container .home {
+  display: grid;
+  height: 175px;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container .absolute-center {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#container .label {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#container .dropdown-hhmm {
+  width: 47% !important;
+  max-width: 80px;
+  padding: 0;
+}
+
+#container .label-colon {
+  width: 6% !important;
+  padding: 0;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container .inputbox {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#container .inputbox>div {
+  width: 100%;
+}
+
+#container button.default-btn-colors,
+#container button.disabled-btn-colors {
+  margin: 0px;
+  border: 1px solid var(--cd-bg-color);
+  background: var(--cd-gradient-color);
+  color: white;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-right: 7px;
+}
+
+#container button.default-btn-colors:hover {
+  background-image: var(--cd-gradient-red-hover-color) !important;
+  background: var(--cd-gradient-red-hover-color) !important;
+  color: white;
+}
+
+#container button.cancel-btn-colors {
+  background: white;
+  border: 1px solid var(--cd-bg-color);
+  color: var(--cd-bg-color);
+  width: 200px;
+  margin-bottom: 10px;
+  margin-right: 7px;
+}
+
+#container button.cancel-btn-colors:hover {
+  background: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+}
+
+#container .grid {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#container .button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#container .checkbox-label {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#container .left-aligned-label {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* padding-left: 20%; */
+}
+
+#container .promo-label {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+#container .edit-button {
+  margin-right: 15px;
+}
+
+#container .right-aligned-control {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#container .dropdown {
+  width: 100%;
+  font-size: 1.14285714em;
+  font-family: 'Lato', 'Helvetica Neue', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+#container textarea {
+  width: 100%;
+  font-size: 1.14285714em;
+  font-family: 'Lato', 'Helvetica Neue', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+#container .number {
+  text-align: right;
+}
+
+#container .number input {
+  text-align: right;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-actions {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+.modal-actions>button {
+  margin: 0 !important;
+}
+
+.modal-actions button.confirm-btn-colors {
+  border: 1px solid var(--cd-bg-color) !important;
+  background: var(--cd-gradient-color)!important;
+  color: white!important;
+}
+
+.modal-actions button.cancel-btn-colors {
+  background: transparent;
+  color: var(--cd-bg-color);
+  border: 1px solid var(--cd-bg-color);
+}
+
+.modal-actions button.confirm-btn-colors:hover {
+  background-image: var(--cd-gradient-red-hover-color) !important;
+  background: var(--cd-gradient-red-hover-color);
+  color: white;
+}
+
+.modal-actions button.cancel-btn-colors:hover {
+  background: #333 !important;
+  color: white !important;
+  border-color: #333 !important;
+}
+
+.header {
+  text-align: center;
+}
+
+.rightContainer {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: .25em;
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  align-items: self-end;
+  z-index: 1;
+}
